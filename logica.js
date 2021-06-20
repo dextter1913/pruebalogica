@@ -47,16 +47,28 @@ let arr = [7, 7, 7, 7, 2, 4, 6, 8, 2]
 
 
 
+    /* 3) Tienes un arreglo (llamado myArray) con 10 elementos (enteros en el rango de 1 a 5).
+    Escribe un programa que imprima el número que tiene más ocurrencias seguidas en arreglo
+    y también imprimir la cantidad de veces que aparece en la secuencia.*/
 
-    /*funtion ordenar(data){
-        data.sort(function (a, b) {
-          if (a.fechahora < b.fechahora) {
-            return 1;
-          }
-          if (a.fechahora > b.fechahora) {
-            return -1;
-          }
-          return 0;
-        });
+    function ordenar(data){
+      data.sort(function (a, b) {
+        if (a.fechahora < b.fechahora) {
+          return 1;
+        }
+        if (a.fechahora > b.fechahora) {
+          return -1;
+        }
+        return 0;
+      });
+    }
+    function compare(a, b) {
+      if (a < b) {//es menor que b según criterio de ordenamiento
+        return -1;
       }
-*/
+      if (a > b ) {// es mayor que B según criterio de ordenamiento
+        return 1;
+      }
+      // a debe ser igual b
+      return 0;
+    }
